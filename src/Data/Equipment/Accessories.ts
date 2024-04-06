@@ -1,4 +1,4 @@
-import { construct, Rarity, RarityColor, DataLayout } from "../structure.js"
+import { construct, emptyField, Rarity, RarityColor } from "../structure.js"
 
 export default [
     construct({
@@ -12,5 +12,5 @@ export default [
         rarity: Rarity.Uncommon,
         rarityColor: RarityColor.Uncommon,
         maxLevel: 120
-    })
+    }),
 ]

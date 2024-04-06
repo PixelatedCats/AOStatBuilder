@@ -31,6 +31,8 @@ export type DataLayout = {
     rarityColor: RarityColor
 }
 
+let counter = 0
+
 function constructor(params: {
     name: string,
     legend: string,
@@ -73,9 +75,9 @@ function constructor(params: {
     }
 }
 
-// Incase the item gets removed, we wouldn't want to shift all the ids that screws up import
 function empty() {
 
 }
 
 export const construct = constructor;
+export const emptyField = empty;
